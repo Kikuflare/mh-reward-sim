@@ -320,7 +320,7 @@ quests = [
   "questguild_id" : "1",
   "star" : "1",
   "questsubgoal_id" : "1",
-  "local_name" : "Training: Sword &amp; Shield",
+  "local_name" : "Training: Sword & Shield",
   "items" : [ {
     "id" : "170",
     "local_name" : "Honey",
@@ -15810,7 +15810,7 @@ quests = [
   "questguild_id" : "1",
   "star" : "7",
   "questsubgoal_id" : "123",
-  "local_name" : "The Hero &amp; the Captain's Trap",
+  "local_name" : "The Hero & the Captain's Trap",
   "items" : [ {
     "id" : "397",
     "local_name" : "Velociprey Hide+",
@@ -67433,7 +67433,7 @@ quests = [
     "type" : "C"
   }, {
     "id" : "1409",
-    "local_name" : "Viper &amp; Toad Ticket",
+    "local_name" : "Viper & Toad Ticket",
     "quantity" : "1",
     "percentage" : "100",
     "type" : "A"
@@ -67571,7 +67571,7 @@ quests = [
     "type" : "C"
   }, {
     "id" : "1409",
-    "local_name" : "Viper &amp; Toad Ticket",
+    "local_name" : "Viper & Toad Ticket",
     "quantity" : "1",
     "percentage" : "5",
     "type" : "A"
