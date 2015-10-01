@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Monster Hunter Reward Simulator</title>
+  </head>
+  
+  <body>
+    <h1>Monster Hunter Reward Simulator</h1>
+    <p> Choose a quest and see what rewards you get!</p>
+    
+    <table id="location-table" class="table">
+      <tr>
+        <td>Location</td>
+        <td>
+          <select id="location-select" onchange="changeRanks()" class="form-control">
+            <option value="1" selected="selected">Caravan</option>
+            <option value="2">Gathering Hall</option>
+            <option value="2">Elder Hall</option>
+            <option value="3">Event</option>
+          </select>
+        </td>
+      </tr>
+    <tr>
+      <td>Rank</td>
+    <td>
+      <select id="rank-select" onchange="loadQuests()" class="form-control">
+      </select>
+    </td>
+    </tr>
+    <tr>
+      <td>Quest</td>
+    <td>
+      <select id="quest-select" onchange="enableSubquest()" class="form-control">
+      </select>
+    </td>
+    </tr>
+    </table>
+    
+    <h2>Modifiers</h2>
+  
+    <table id="modifier-table" class="table">
+      <tr>
+        <td>Fate</td>
+        <td>
+          <select id="fate-select" class="form-control">
+            <option value="22">Normal</option>
+            <option value="8">Horrible Luck</option>
+            <option value="16">Bad Luck</option>
+            <option value="25">Good Luck</option>
+            <option value="28">Great Luck</option>
+            <option value="31">Miraculous Luck</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Lucky Cat</td>
+        <td>
+          <select id="luckycat-select" class="form-control">
+            <option value="0">Inactive</option>
+            <option value="1">Lucky Cat</option>
+            <option value="2">Ultra Lucky Cat</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Subquest completed?</td>
+        <td>
+          <select id="subquest-select" class="form-control">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    
+    <input type="button" value="Generate!" class="btn btn-primary" onclick="rewardSim()">
+    <div id="reward-box" class="well"></div>
+
+    <script type="text/javascript" src="./quest.json"></script>
+    <script type="text/javascript" src="./reward-sim.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
