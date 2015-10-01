@@ -1,7 +1,32 @@
-#location-table {
-width: auto;
+/* Kiku's MH4U Reward Simulator CSS */
+
+.single-line {
+padding-bottom: 15px;
 }
 
-#modifier-table {
-width: auto;
+.text-label {
+display: inline-block;
+}
+
+#reward-box {
+margin-top: 10px;
+min-height: 150px;
+}
+
+select {
+max-width: 350px !important;
+display: inline-block !important;
+float: right !important;
+margin-right: 30px !important;
+}
+
+html {
+margin-left: 15px;
+}
+
+div {
+max-width: 540px;
+border-bottom: 1px solid #e5e5e5;
+margin-bottom: 9px;
+padding-bottom: 10px;
 }

@@ -8,74 +8,54 @@
     <title>Monster Hunter Reward Simulator</title>
   </head>
   
-  <body>
-    <h1>Monster Hunter Reward Simulator</h1>
-    <p> Choose a quest and see what rewards you get!</p>
-    
-    <table id="location-table" class="table">
-      <tr>
-        <td>Location</td>
-        <td>
-          <select id="location-select" onchange="changeRanks()" class="form-control">
-            <option value="1" selected="selected">Caravan</option>
-            <option value="2">Gathering Hall</option>
-            <option value="2">Elder Hall</option>
-            <option value="3">Event</option>
-          </select>
-        </td>
-      </tr>
-    <tr>
-      <td>Rank</td>
-    <td>
-      <select id="rank-select" onchange="loadQuests()" class="form-control">
-      </select>
-    </td>
-    </tr>
-    <tr>
-      <td>Quest</td>
-    <td>
-      <select id="quest-select" onchange="enableSubquest()" class="form-control">
-      </select>
-    </td>
-    </tr>
-    </table>
-    
-    <h2>Modifiers</h2>
+  <h1 class="single-line">Monster Hunter Reward Simulator</h1>
+  <p class="single-line"> Choose a quest and see what rewards you get!</p>
   
-    <table id="modifier-table" class="table">
-      <tr>
-        <td>Fate</td>
-        <td>
-          <select id="fate-select" class="form-control">
-            <option value="22">Normal</option>
-            <option value="8">Horrible Luck</option>
-            <option value="16">Bad Luck</option>
-            <option value="25">Good Luck</option>
-            <option value="28">Great Luck</option>
-            <option value="31">Miraculous Luck</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>Lucky Cat</td>
-        <td>
-          <select id="luckycat-select" class="form-control">
-            <option value="0">Inactive</option>
-            <option value="1">Lucky Cat</option>
-            <option value="2">Ultra Lucky Cat</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>Subquest completed?</td>
-        <td>
-          <select id="subquest-select" class="form-control">
-            <option value="0">No</option>
-            <option value="1">Yes</option>
-          </select>
-        </td>
-      </tr>
-    </table>
+  <body>
+    <div>
+      <p class="text-label">Location</p>
+      <select id="location-select" onchange="changeRanks()" class="form-control">
+        <option value="1" selected="selected">Caravan</option>
+        <option value="2">Gathering Hall</option>
+        <option value="2">Elder Hall</option>
+        <option value="3">Event</option>
+      </select>
+    </div>
+    <div>
+      <p class="text-label">Rank</p>
+      <select id="rank-select" onchange="loadQuests()" class="form-control"></select>
+    </div>
+    <div>
+      <p class="text-label">Quest</p>
+      <select id="quest-select" onchange="enableSubquest()" class="form-control"></select>
+    </div>
+    <h2 class="single-line">Modifiers</h2>
+    <div>
+      <p class="text-label">Fate</p>
+      <select id="fate-select" class="form-control">
+        <option value="22">Normal</option>
+        <option value="8">Horrible Luck</option>
+        <option value="16">Bad Luck</option>
+        <option value="25">Good Luck</option>
+        <option value="28">Great Luck</option>
+        <option value="31">Miraculous Luck</option>
+      </select>
+    </div>
+    <div>
+      <p class="text-label">Lucky Cat</p>
+      <select id="luckycat-select" class="form-control">
+        <option value="0">Inactive</option>
+        <option value="1">Lucky Cat</option>
+        <option value="2">Ultra Lucky Cat</option>
+      </select>
+    </div>
+    <div>
+      <p class="text-label">Subquest completed?</p>
+      <select id="subquest-select" class="form-control">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
     
     <input type="button" value="Generate!" class="btn btn-primary" onclick="rewardSim()">
     <div id="reward-box" class="well"></div>
